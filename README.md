@@ -87,6 +87,3 @@ uvicorn backend.app:app --reload --port 8000
 - All test reasoning is grounded strictly in the provided documents. The agent includes document citations for each test case.
 - The generated Selenium scripts use IDs and selectors present in the provided `checkout.html`.
 - If you use your own `checkout.html`, ensure elements have stable attributes (IDs/names) for reliable selectors.
-
-## License
-This project is provided for assignment demonstration purposes.
