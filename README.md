@@ -83,13 +83,6 @@ uvicorn backend.app:app --reload --port 8000
 - `api_endpoints.json`
   - Example endpoints for coupon and order submission
 
-## Demo Video Outline (5–10 minutes)
-- Upload documents + HTML
-- Build the knowledge base
-- Generate test cases
-- Select a test case
-- Generate Selenium script and briefly walk through the produced code
-
 ## Notes
 - All test reasoning is grounded strictly in the provided documents. The agent includes document citations for each test case.
 - The generated Selenium scripts use IDs and selectors present in the provided `checkout.html`.
