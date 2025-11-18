@@ -1,0 +1,13 @@
+{
+  "POST /apply_coupon": {
+    "code": "string"
+  },
+  "POST /submit_order": {
+    "name": "string",
+    "email": "string",
+    "address": "string",
+    "shipping_method": "string",
+    "payment_method": "string",
+    "items": [{"id": "number", "qty": "number"}]
+  }
+}

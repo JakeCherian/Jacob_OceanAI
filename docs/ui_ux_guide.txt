@@ -1,0 +1,7 @@
+UI/UX Guidelines
+
+- Form validation errors must be displayed in red text.
+- The "Pay Now" button should be green.
+- Error messages should be inline, near their corresponding input fields.
+- The checkout page should present a clear cart summary with Subtotal, Discount, Shipping, and Total.
+- Buttons should be clearly labeled and easily discoverable.
