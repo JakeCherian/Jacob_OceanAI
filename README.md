@@ -1,20 +1,52 @@
 # Autonomous QA Agent for Test Case and Script Generation
 
-An intelligent QA agent that builds a testing knowledge base from project documentation and a target `checkout.html`, generates grounded test cases (JSON/Markdown), and converts selected test cases into runnable Python Selenium scripts.
+![Main UI](Ocean.png)
 
-## Features
-- Upload support documents (MD/TXT/JSON/PDF) and target `checkout.html`
-- Build a knowledge base with text chunking, embeddings, and vector search (ChromaDB)
-- RAG-based agent generates structured test cases grounded strictly in provided docs
-- Select a test case to generate a runnable Selenium Python script with real selectors
-- Backend implemented with FastAPI; Streamlit UI for simple workflows
+The **Autonomous QA Agent** is an AI-powered system that automates the QA process by reading project documentation and a target `checkout.html` file, building a knowledge base, generating accurate test cases, and converting selected test cases into runnable Python Selenium scripts.  
+This project demonstrates how AI can enhance software testing by reducing manual effort, improving accuracy, and ensuring test coverage aligned with project requirements.
 
-## Tech Stack
-- UI: Streamlit
-- Backend: FastAPI (optional local-mode used by Streamlit for preview)
-- Vector DB: ChromaDB with SentenceTransformers (`all-MiniLM-L6-v2`)
-- Parsers: BeautifulSoup4 (HTML), builtin readers (MD/TXT/JSON), PyMuPDF (PDF)
-- LLM: Pluggable (Ollama via HTTP). Fallback template mode when no LLM configured.
+---
+
+## 📌 Overview
+
+Traditional QA requires manually reading documentation, writing test cases, and then writing automation scripts.  
+This project automates all three steps:
+
+1. **Ingest documents + HTML**
+2. **Understand them using embeddings & vector search**
+3. **Generate grounded test cases**
+4. **Produce Selenium scripts automatically**
+
+The result is a powerful, end-to-end QA automation assistant.
+
+---
+
+## 🚀 Features
+
+- Upload project documents (MD, TXT, JSON, PDF)
+- Upload or use sample `checkout.html`
+- Build a searchable knowledge base using embeddings
+- RAG-based (Retrieval-Augmented Generation) test case creation
+- Strict grounding in provided documents (no hallucinated features)
+- Auto-generate runnable Python Selenium scripts
+- Simple and intuitive Streamlit UI
+- Optional FastAPI backend for modular architecture
+
+---
+
+## 🧠 Tech Stack
+
+| Component | Technology |
+|----------|------------|
+| UI | Streamlit |
+| Backend | FastAPI |
+| Vector DB | ChromaDB |
+| Embeddings | SentenceTransformers (`all-MiniLM-L6-v2`) |
+| Parsers | BeautifulSoup4, PyMuPDF, JSON/MD/TXT readers |
+| LLM Provider | Ollama / Local Models |
+| Automation | Selenium (Python) |
+
+---
 
 ## Project Structure
 ```
